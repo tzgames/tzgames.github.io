@@ -1,13 +1,51 @@
 <html>
+<head>
+<title>TZ Games Homepage</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rowdies">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
 <style>
-body {margin:0;}
+body {margin:0; font-family: Audiowide;}
+.sidebar {
+  height: 100%;
+  width: 450px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 30px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; 
+  padding: 0px 10px;
+}
+h2 {font-family: Rowdies;}
+h1 {font-family: Rowdies;}
 
 ul {
 list-style-type: none;
 margin: 0;
+margin-left: 450px;
 padding: 0;
 overflow: hidden;
-background-color: #333;
+text-align: center;
+background-color: #8a00e6;
 position: fixed;
 top: 0;
 width: 100%;
@@ -20,27 +58,22 @@ float: left;
 li a {
 display: block;
 color: white;
-text-align: center;
-padding: 14px 16px;
+padding: 16px 28px;
+font-size: 25px;
 text-decoration: none;
+text-align: center;
 }
 
 li a:hover:not(.active) {
-background-color: #111;
+background-color: #6706a8;
 }
+strong {color: rgb(144, 0, 201); font-weight: bold; text-align: center; font-size: 65px; margin-left: 30px;}
 
 .active {
-background-color: #4f4f4f;
+background-color: #1a1a1a;
 }
-body {background-color: #4f4f4f;}
-h1{color:red;font-family:verdana;font-size: 60px;}
-div.a {
-text-align: center;
-}
-#troll{ color: #ADFF2F;}
-#test{color: red;}
-#random{font-size: 50px;color: orange;font-family: fantasy;}
-#why{font-size:20px;color: #7FFF00;}
+body {background-color: #1a1a1a;}
+
 .button {
 padding:10px 50px;
 font-size: 24px;
@@ -62,29 +95,17 @@ transform: translateY(5px);
 }
 .whose{padding:0.5px 0.5px;}
 </style>
-<body><div class="a">
+<body>
+  <div class="sidebar">
+    <h2><strong>Navigation</strong></h2>
+    <a href="#home"> Home</a>
+    <a href="#tutorials"> Tutorials</a>
+    <a href="#about"> About</a>
+    <a href="#more"> More</a>
+  </div>
 <ul>
   <li><a class="active" href="index.html">Homepage</a></li>
   <li><a href="games.html">Astro Hole</a></li>
 </ul>
-<h1 id="top"><strong>Welcome to the totally random website!</strong></h1>
-<p id="why">This page will help you learn more about..............Nothing 😂 LOL<br>
-I made this using:<br>
-<a href="https://www.w3schools.com/html/">HTML</a><br> 
-<a href="https://www.w3schools.com/css/">CSS</a><br>
-<a href="https://www.w3schools.com/js/">Java script</a><br>
-</p>
-<div class="slidecontainer">
-  <h3><u>This slider does nothing but I thought it would be cool.......Give it a whirl!</u></h3>
-  <input type="range" min="1" max="100" value="50"></div>
-<p><button class="button" onclick="alert('I am very hungry........OOOOOOOOH; Gotta get the lasange out of the fridge and leave it to soak with the lemons. Wooop Wooop! 😋')">Do not push!!!</button></p>
-<h2 id="random"><u>Would you like a slice of pie?</u></h2>
-<a href="lol.html"><img src="https://media.healthyfood.com/wp-content/uploads/2017/03/In-season-August-Lemons-500x332.jpg" alt="lemons"></a>
-<p>
-<p id="troll"><button class="whose" onclick="alert('Congrats on finding the hidden button................JK.....There was no prize! LOL......you just got trolled')"></button>
-Click the hidden button to win a special 🤑 prize!!!</p>
-<a href="#top">🤐😯🤗🥰🤑😪😴🥱🤬🥵😵🐱‍👤💩</a>
-<a href="https://www.w3schools.com/" id="test">Credit:W3schools</a>
-</p>
-</div></body>
+</body>
 </html>
