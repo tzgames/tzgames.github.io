@@ -1,13 +1,47 @@
 <html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rowdies">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
 <style>
-body {margin:0;background-color: #4f4f4f;}
+body {margin:0;background-color: #1a1a1a; font-family: Audiowide;}
+
+.sidebar {
+  height: 100%;
+  width: 450px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #818181;
+  display: block;
+}
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; 
+  padding: 0px 10px;
+}
 
 ul {
 list-style-type: none;
 margin: 0;
+margin-left: 450px;
 padding: 0;
 overflow: hidden;
-background-color: #333;
+text-align: center;
+background-color: #8a00e6;
 position: fixed;
 top: 0;
 width: 100%;
@@ -20,26 +54,29 @@ float: left;
 li a {
 display: block;
 color: white;
-text-align: center;
-padding: 20px 25px;
+text-align: centers;
+padding: 16px 28px;
+font-size: 25px;
 text-decoration: none;
 }
 
 li a:hover:not(.active) {
-background-color: #b103fc;
+background-color: #6706a8;
 }
 
 .active {
-background-color: #4f4f4f;
+background-color: #1a1a1a;
 }
-h1{text-align: center;color: orange;font-family: serif;font-size: 60px;}
+h1{text-align: center;color: orange;font-family: serif;font-size: 60px; font-family: Rowdies;}
+h2{font-family: Rowdies;}
 
 </style>
 <body>
-<ul>
+  <div class="sidebar">
+  </div>
+<ul><div class="bar">
   <li><a href="index.html">Homepage</a></li>
-  <li><a class="active" href="games.html">Astro Hole</a></li>
+  <li><a class="active" href="games.html">Astro Hole</a></li></div>
 </ul>
-<h1>Astro hole!!!</h1>
 </body>
 </html>
